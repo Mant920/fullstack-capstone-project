@@ -1,0 +1,53 @@
+.register-card {
+    background: #ffffff;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    border: none !important;
+}
+
+.register-icon {
+    font-size: 2.5rem;
+}
+
+.register-card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.register-card .form-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #444;
+}
+
+.register-card .form-control {
+    border-radius: 8px;
+    border: 1px solid #dde2ec;
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.register-card .form-control:focus {
+    border-color: #e94560;
+    box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.12);
+}
+
+.register-btn {
+    background: #e94560;
+    border: none;
+    border-radius: 8px;
+    padding: 0.65rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+}
+
+.register-btn:hover:not(:disabled) {
+    background: #c73652;
+}
+
+.register-btn:disabled {
+    background: #f0a0ae;
+}

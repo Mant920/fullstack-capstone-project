@@ -1,0 +1,75 @@
+.gl-navbar {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    padding: 0.75rem 0;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.gl-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #e94560 !important;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.gl-brand:hover {
+    color: #ff6b8a !important;
+}
+
+.gl-brand-icon {
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.gl-username {
+    color: #e2c97e !important;
+    font-weight: 600;
+}
+
+.gl-logout-btn {
+    background: rgba(233, 69, 96, 0.2);
+    border: 1px solid #e94560;
+    color: #e94560;
+    border-radius: 6px;
+    padding: 0.375rem 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.gl-logout-btn:hover {
+    background: #e94560;
+    color: white;
+}
+
+.gl-register-btn {
+    background: #e94560;
+    border: 1px solid #e94560;
+    color: white !important;
+    border-radius: 6px;
+    padding: 0.375rem 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.gl-register-btn:hover {
+    background: #c73652;
+    border-color: #c73652;
+    color: white !important;
+}

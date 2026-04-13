@@ -1,0 +1,134 @@
+/* Task 1: Style the body */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Task 2: Background with blur effect */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+        linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 70%, #e94560 100%);
+    z-index: -2;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(ellipse at 20% 50%, rgba(233, 69, 96, 0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(15, 52, 96, 0.4) 0%, transparent 50%);
+    z-index: -1;
+}
+
+/* Task 3: Style the content area */
+.content {
+    width: 100%;
+    padding: 3rem 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Task 4: Add styles for headings, paragraphs, and buttons */
+h1, h2, .lead, .btn-primary {
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #ffffff;
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    letter-spacing: -1px;
+    margin-bottom: 0.5rem;
+}
+
+h2.lead {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    text-shadow: none;
+}
+
+.brand-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    display: block;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+}
+
+.quote-text {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.get-started-btn {
+    background: #e94560;
+    border: none;
+    border-radius: 50px;
+    padding: 0.9rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 6px 24px rgba(233, 69, 96, 0.5);
+    transition: all 0.25s ease;
+}
+
+.get-started-btn:hover {
+    background: #c73652;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(233, 69, 96, 0.6);
+}
+
+.features {
+    margin-top: 3rem;
+}
+
+.feature-item {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 1.5rem 1rem;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.feature-item:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.feature-item h6 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+}
+
+.feature-item p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.8rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 3rem; }
+    .get-started-btn { padding: 0.75rem 2rem; font-size: 1rem; }
+}
